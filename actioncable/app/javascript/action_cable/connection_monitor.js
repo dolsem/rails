@@ -67,11 +67,11 @@ class ConnectionMonitor {
   }
 
   poll() {
-    this.pollTimeout = setTimeout(() => {
-      this.reconnectIfStale()
-      this.poll()
-    }
-    , this.getPollInterval())
+//     this.pollTimeout = setTimeout(() => {
+//       this.reconnectIfStale()
+//       this.poll()
+//     }
+//     , this.getPollInterval())
   }
 
   getPollInterval() {
